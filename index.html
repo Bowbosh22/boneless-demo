@@ -5,8 +5,18 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Boneless AFR Street Food — Brazzaville</title>
 <meta name="description" content="Boneless AFR Street Food, grillades de rue sans os à Brazzaville. Ouvert 24h/24 à l'Hôtel Saphir, Avenue Alfassa. Menu, itinéraire et commande WhatsApp.">
+<link rel="canonical" href="https://bowbosh22.github.io/boneless-demo/">
+<meta property="og:type" content="restaurant">
+<meta property="og:locale" content="fr_FR">
+<meta property="og:site_name" content="Boneless AFR Street Food">
+<meta property="og:title" content="Boneless AFR Street Food · Brazzaville">
+<meta property="og:description" content="Le poulet sans os, la ville sans pause. Grillades de rue ouvertes 24h/24, Hôtel Saphir, Avenue Alfassa.">
+<meta property="og:url" content="https://bowbosh22.github.io/boneless-demo/">
+<meta property="og:image" content="https://bowbosh22.github.io/boneless-demo/og-image.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bungee&family=Work+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@500;600;700&display=swap">
-<script src="https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js"></script>
 <style>
   :root{
     --ink:#141110; --ink-2:#1d1a17; --ember:#ff5a1f; --ember-2:#ffb020;
@@ -108,7 +118,7 @@
     <nav class="nav" aria-label="Navigation">
       <a href="#menu">Menu</a>
       <a href="#infos">Nous trouver</a>
-      <a href="#qrcode">QR code</a>
+      <a href="menu.html">Carte complète</a>
     </nav>
     <a class="btn-call" href="tel:+24261020202">Appeler</a>
   </div>
@@ -189,6 +199,7 @@
         <div class="row"><span>Korean hot dog</span><span class="fill"></span><span class="price">—</span></div>
         <div class="ticket-note">Carte partielle · prix en FCFA · demandez la carte complète à l'équipe</div>
       </div>
+      <div class="cta-row" style="justify-content:center;"><a class="cta ghost" href="menu.html">Ouvrir le menu seul</a></div>
     </div>
   </section>
 
@@ -215,18 +226,6 @@
     </div>
   </section>
 
-  <section id="qrcode">
-    <div class="wrap">
-      <div class="tagline">Menu sur mobile</div>
-      <h2>Scannez, choisissez</h2>
-      <div class="qr">
-        <div class="qr-card"><div id="qr"></div></div>
-        <div class="qr-text">
-          <p>Ce QR code ouvre le menu sur le téléphone. Il s'imprime pour le comptoir, la vitrine et les boîtes à emporter.</p>
-        </div>
-      </div>
-    </div>
-  </section>
 </main>
 
 <footer>
@@ -238,13 +237,5 @@
   <div class="credit">Site conçu par <b>Atelier KPM</b> · agence web &amp; UI/UX, Brazzaville</div>
 </footer>
 
-<script>
-  (function () {
-    var box = document.getElementById("qr");
-    try {
-      new QRCode(box, { text: "https://bowbosh22.github.io/boneless-demo/", width: 150, height: 150, colorDark: "#141110", colorLight: "#FFFFFF" });
-    } catch (e) { box.textContent = "QR code"; }
-  })();
-</script>
 </body>
 </html>
